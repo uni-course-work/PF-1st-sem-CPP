@@ -30,3 +30,5 @@ int main () {
     <<'\n';
 }
 ```
+
+__BY ABDUL SAMAD__
