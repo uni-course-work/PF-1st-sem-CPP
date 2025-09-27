@@ -14,54 +14,48 @@
 | 15    | Structures                                     | 1. `Student` structure: input & print 3 students.<br>2. `Book` structure: find most expensive.<br>3. Nested structure: Student with Address.                   |
 | 16–17 | Pointers + File Handling                       | 1. Print value & memory address with pointer.<br>2. Word counter (file).<br>3. Reverse a string using pointers.<br>4. Student record system (file write/read). |
 
+## BY Claude
 
-## Final Problems 
-⚡ Functional Programming Style Challenge
+Focused C++ Problem Set - 3 Month CS Fundamentals Track
+Phase 1: Foundation Problems (6 Problems)
+Covers: Basic I/O, data types, operators, control structures
+1. Smart Calculator
+Build a calculator with menu system that handles all arithmetic operations, type casting between int/float/double, and input validation. Include memory functions and operation history.
+2. Number Systems Converter & Analyzer
+Create a program that converts between binary, octal, decimal, and hexadecimal. Also analyze numbers (prime check, perfect number, Armstrong number). Use loops and decision structures.
+3. Pattern Master
+Generate complex patterns using nested loops: number pyramids, diamond patterns, Pascal's triangle, and Floyd's triangle. User selects pattern type and size.
+4. Grade Processing System
+Input student scores, calculate statistics (average, median, highest, lowest), assign letter grades with +/- system, and generate a formatted report. Handle multiple students.
+5. Text Cipher Suite
+Implement Caesar cipher, Atbash cipher, and simple substitution cipher. Both encrypt and decrypt with file I/O support. Use switch statements and character manipulation.
+6. Game: Number Guessing Enhanced
+Multi-level guessing game with hints, difficulty levels, score tracking, and replay functionality. Demonstrate all control structures and logical operators.
 
-Problem: Matrix Operations Library (Functional Style)
+Phase 2: Intermediate Problems (5 Problems)
+Covers: Arrays, strings, functions, function overloading
+7. Student Management System
+Complete student record system using arrays and structures. Functions for add, delete, search, update, sort by different criteria. Implement function overloading for different search types (by ID, name, GPA).
+8. Matrix Calculator
+Implement matrix operations using 2D arrays and functions: addition, multiplication, transpose, determinant calculation. Use function overloading for different matrix sizes and pass-by-reference.
+9. String Processing Toolkit
+Advanced string manipulation: word count, character frequency, palindrome checker, anagram detector, string reversal, case conversion. Use arrays of characters and string functions.
+10. Banking System with Transactions
+Multi-account banking system using structures and arrays. Functions for deposits, withdrawals, transfers, transaction history. Implement function overloading for different transaction types.
+11. Inventory Management Pro
+Store inventory system with structures for products, suppliers, sales. Functions with pass-by-value and pass-by-reference, returning structure variables, and file persistence.
 
-Implement a set of functions to handle a 2D integer matrix:
+Phase 3: Advanced Problems (3 Problems)
+Covers: Pointers, file handling, advanced structures
+12. Dynamic Contact Manager
+Contact management system using pointers and dynamic memory concepts. File I/O for saving/loading contacts, search and sort functions using pointer manipulation.
+13. File Analysis Tool
+Analyze text files: word frequency, line count, character statistics, find/replace functionality. Use file streams (ifstream/ofstream) and pointer operations for efficient file processing.
+14. Final Project: Library Management System
+Complete library system combining all concepts:
 
-createMatrix(rows, cols) → initializes with user input.
-
-printMatrix(matrix) → prints neatly.
-
-addMatrices(a, b) → returns a new matrix that is the sum.
-
-multiplyMatrices(a, b) → returns the product.
-
-transpose(matrix) → returns transposed version.
-
-Restrictions:
-
-Use functions only (no classes, no OOP).
-
-Pass arrays (or vectors) by reference where needed.
-
-Don’t use any fancy STL shortcuts beyond basics (vector allowed).
-
-Why it’s good: It forces you to organize functions, manage parameters, think about memory, and build reusable utilities. You’ll struggle a bit with array handling but won’t drown.
-
-⚡ OOP Style Challenge
-
-Problem: Student Management System (OOP Edition)
-
-Build a program using classes + objects to manage students.
-
-Features:
-
-Class Student → attributes: roll number, name, marks in 5 subjects.
-
-Class StudentManager → stores a list of students (array/vector).
-
-Functions:
-
-addStudent() → input new student.
-
-printAll() → print all student details.
-
-getTopper() → find the student with highest average.
-
-searchStudent(rollNo) → returns details if found.
-
-File Handling (bonus): Save & load students to/from a file.
+Structures: Book, Member, Transaction records
+Arrays & Pointers: Dynamic book and member arrays
+Functions: Overloaded functions for different operations
+File Handling: Save/load library data, generate reports
+Advanced Features: Fine calculation, book reservation, search algorithms
