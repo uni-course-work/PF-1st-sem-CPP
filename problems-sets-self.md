@@ -13,3 +13,55 @@
 | 14    | Function Overloading + Inline Functions        | 1. Overloaded add functions (int & double).<br>2. Inline function: square of number.<br>3. Inline function: max of two numbers.                                |
 | 15    | Structures                                     | 1. `Student` structure: input & print 3 students.<br>2. `Book` structure: find most expensive.<br>3. Nested structure: Student with Address.                   |
 | 16–17 | Pointers + File Handling                       | 1. Print value & memory address with pointer.<br>2. Word counter (file).<br>3. Reverse a string using pointers.<br>4. Student record system (file write/read). |
+
+
+## Final Problems 
+⚡ Functional Programming Style Challenge
+
+Problem: Matrix Operations Library (Functional Style)
+
+Implement a set of functions to handle a 2D integer matrix:
+
+createMatrix(rows, cols) → initializes with user input.
+
+printMatrix(matrix) → prints neatly.
+
+addMatrices(a, b) → returns a new matrix that is the sum.
+
+multiplyMatrices(a, b) → returns the product.
+
+transpose(matrix) → returns transposed version.
+
+Restrictions:
+
+Use functions only (no classes, no OOP).
+
+Pass arrays (or vectors) by reference where needed.
+
+Don’t use any fancy STL shortcuts beyond basics (vector allowed).
+
+Why it’s good: It forces you to organize functions, manage parameters, think about memory, and build reusable utilities. You’ll struggle a bit with array handling but won’t drown.
+
+⚡ OOP Style Challenge
+
+Problem: Student Management System (OOP Edition)
+
+Build a program using classes + objects to manage students.
+
+Features:
+
+Class Student → attributes: roll number, name, marks in 5 subjects.
+
+Class StudentManager → stores a list of students (array/vector).
+
+Functions:
+
+addStudent() → input new student.
+
+printAll() → print all student details.
+
+getTopper() → find the student with highest average.
+
+searchStudent(rollNo) → returns details if found.
+
+File Handling (bonus): Save & load students to/from a file.
