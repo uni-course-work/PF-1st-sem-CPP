@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 int main () {
   int number = 19;
@@ -8,5 +7,5 @@ int main () {
   std::string hello = "Hello";
   bool status = true;
   char exclaim = '!';
-  std::cout<<number<<' '<<decimal<<' '<<decimals<<' '<<hello<<' '<<status<<' '<<exclaim<< std::endl;
+  std::cout<<number<<' '<<decimal<<' '<<decimals<<' '<<hello<<' '<<status<<' '<<exclaim<< "\n";
 }
