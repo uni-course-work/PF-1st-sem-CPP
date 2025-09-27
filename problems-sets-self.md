@@ -30,30 +30,27 @@ Input student scores, calculate statistics (average, median, highest, lowest), a
 5. Text Cipher Suite
 Implement Caesar cipher, Atbash cipher, and simple substitution cipher. Both encrypt and decrypt with file I/O support. Use switch statements and character manipulation.
 6. Game: Number Guessing Enhanced
-Multi-level guessing game with hints, difficulty levels, score tracking, and replay functionality. Demonstrate all control structures and logical operators.
-
-Phase 2: Intermediate Problems (5 Problems)
+ Multi-level guessing game with hints, difficulty levels, score tracking, and replay functionality. Demonstrate all control structures and logical operators.
+### Phase 2: Intermediate Problems (5 Problems)
 Covers: Arrays, strings, functions, function overloading
-7. Student Management System
+1. Student Management System
 Complete student record system using arrays and structures. Functions for add, delete, search, update, sort by different criteria. Implement function overloading for different search types (by ID, name, GPA).
-8. Matrix Calculator
+2. Matrix Calculator
 Implement matrix operations using 2D arrays and functions: addition, multiplication, transpose, determinant calculation. Use function overloading for different matrix sizes and pass-by-reference.
-9. String Processing Toolkit
+3. String Processing Toolkit
 Advanced string manipulation: word count, character frequency, palindrome checker, anagram detector, string reversal, case conversion. Use arrays of characters and string functions.
-10. Banking System with Transactions
+4. Banking System with Transactions
 Multi-account banking system using structures and arrays. Functions for deposits, withdrawals, transfers, transaction history. Implement function overloading for different transaction types.
-11. Inventory Management Pro
+5. Inventory Management Pro
 Store inventory system with structures for products, suppliers, sales. Functions with pass-by-value and pass-by-reference, returning structure variables, and file persistence.
-
-Phase 3: Advanced Problems (3 Problems)
+### Phase 3: Advanced Problems (3 Problems)
 Covers: Pointers, file handling, advanced structures
-12. Dynamic Contact Manager
+1. Dynamic Contact Manager
 Contact management system using pointers and dynamic memory concepts. File I/O for saving/loading contacts, search and sort functions using pointer manipulation.
-13. File Analysis Tool
+2. File Analysis Tool
 Analyze text files: word frequency, line count, character statistics, find/replace functionality. Use file streams (ifstream/ofstream) and pointer operations for efficient file processing.
-14. Final Project: Library Management System
+3. Final Project: Library Management System
 Complete library system combining all concepts:
-
 Structures: Book, Member, Transaction records
 Arrays & Pointers: Dynamic book and member arrays
 Functions: Overloaded functions for different operations
