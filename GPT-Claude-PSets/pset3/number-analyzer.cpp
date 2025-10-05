@@ -40,6 +40,36 @@ int main() {
       max = numbers[i];
     }
   }
+
+  for (int i = max; i >=0; i --){
+    for (int j = 0; j < N; j++){
+      int temp = numbers[j];
+      if (temp > i) {
+        std::cout << '*';
+      } else if (temp < 0) {
+        std::cout << ' ';
+      }
+      std::cout << '\t';
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+  for (int i = 0; i <N; i++){
+    std::cout << numbers[i] << '\t';
+  }
+  std::cout << std::endl;
+  for (int i = 0; i >=min; i --){
+    for (int j = 0; j < N; j++){
+      int temp = numbers[j];
+      if (temp < i) {
+        std::cout << '*';
+      } else if ( temp >= 0) {
+        std::cout << ' ';
+      }
+      std::cout << '\t';
+    }
+    std::cout << std::endl;
+  }
   // Print Results
   average = (double)sum / N;
   std::cout << "Sum       \t: " << sum << std::endl;
