@@ -1,29 +1,3 @@
-✅ Here’s the final confirmed setup before I execute:
-
-* **Single Markdown file** → `Programming_Fundamentals_PSETs.md`
-* **No starter code**, but each section has:
-
-  * Title
-  * Objectives (learning goals)
-  * Detailed problem statement
-  * Input/Output formats
-  * Requirements checklist
-  * Challenge extension (optional)
-  * Debug snippet (one per PSET)
-  * Thinking & reflection prompts
-* **Style:** Minimalist, only structured where necessary
-* **Tone:** Formal, clear, motivating (CS50 style)
-* **Language:** C++
-
----
-
-I’ll now begin generating the file — **Part 1 (PSETs 1–3)** — in full Markdown, completely ready for Obsidian or GitHub view.
-Once you review it, I’ll continue seamlessly with **Part 2 (PSETs 4–6)**, and so on until the entire roadmap is complete.
-
-Ready? Here we go.
-
----
-
 ## 🧠 Programming Fundamentals – Complete Problem Set Series (Part 1)
 
 ### **PSET 1–3**
