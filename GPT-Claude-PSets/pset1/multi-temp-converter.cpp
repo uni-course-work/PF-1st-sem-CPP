@@ -1,4 +1,7 @@
 #include <iostream>
+#include <iomanip>
+
+#define FIXED_FLOAT(x) std::fixed <<std::setprecision(2)<<(x)
 
 int main() {
   double temprature, kelvin, celsius, farhenheit;
@@ -29,8 +32,8 @@ int main() {
     std::cout << "Unkown Unit: ";
     return 1;
   }
-  std::cout << celsius <<"°C = ";
-  std::cout << farhenheit <<"°F = ";
-  std::cout << kelvin <<"°K\n";
+  std::cout << FIXED_FLOAT(celsius) <<"°C = ";
+  std::cout << FIXED_FLOAT(farhenheit) <<"°F = ";
+  std::cout << FIXED_FLOAT(kelvin) <<"°K\n";
   return 0;
 }
