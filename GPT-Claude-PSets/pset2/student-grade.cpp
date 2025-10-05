@@ -1,6 +1,8 @@
 #include <iostream>
 #include <iomanip>
 
+#define FIXED_FLOAT(x) std::fixed << std::setprecision(2) << x
+
 int main() {
   int numberOfScores = 0;
   char grade;
@@ -44,8 +46,8 @@ int main() {
   } else {
     grade = 'F';
   }
-  std::cout << "Original Average => " << average << std::endl;
-  std::cout << "New Average (lowest dropped) => " << newAverage << std::endl;
+  std::cout << "Original Average => " << FIXED_FLOAT(average)<< std::endl;
+  std::cout << "New Average (lowest dropped) => " << FIXED_FLOAT(newAverage) << std::endl;
   std::cout << "Rounded => " << rounded << std::endl;
   std::cout << "Grade => " << grade << std::endl;
 }
