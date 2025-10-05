@@ -2,23 +2,34 @@
 #include <iomanip>
 
 int main() {
-  int numberOfScores = 1;
+  int numberOfScores = 0;
   char grade;
-  std::cout << "Enter number of scores you want to average: ";
-  std::cin >> numberOfScores;
+// Validate Number of scores must be positive and greater than 1
+  do {
+    std::cout << "Enter number of scores you want to average: ";
+    std::cin >> numberOfScores;
+  } while (numberOfScores < 2);
+
   double scores [numberOfScores];
   double sum = 0, average = 0, newAverage = 0, lowest = 100;
   for (size_t i = 0; i < numberOfScores; i++) {
     std::cout << "Enter socre " << i + 1 << ": ";
     std::cin >> scores[i];
+    while (scores[i] < 0 || scores[i] > 100) {
+      std::cout << "Invalid Scores!\n";
+      std::cout << "Renter Score: " << i + 1 << ": ";
+      std::cin >> scores[i];
+    }
+    // Keep track of Lowest number
     if (scores[i] < lowest) {
       lowest = scores[i];
     } 
     sum += scores[i];
   }
   average = sum / numberOfScores;
-  newAverage = (sum - lowest) / (numberOfScores - 1);
-  int rounded = newAverage;
+  // Removing lowest and also reducing total scores by 1
+  newAverage = (sum - lowest) / (numberOfScores - 1); 
+  int rounded = newAverage; // Implicit conversion
   
   if (rounded >= 90) {
     grade = 'A';
