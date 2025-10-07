@@ -2,6 +2,7 @@
 
 int main() {
   int option, quantity, subtotal, total = 0;
+  double tax = 0.13;
   bool exit = false;
   int burgerPrice = 500;
   int pizzaPrice = 800;
@@ -43,6 +44,9 @@ int main() {
     }
     std::cout << "Subtotal: " << subtotal << std::endl;
   } while (exit == false);
+  int newTotal = total + total * tax;
   std::cout << "Total: " << total << std::endl;
+  std::cout << "Tax: " << total * tax << std::endl;
+  std::cout << "Net Total: " << newTotal << std::endl;
   return 0;
 }
