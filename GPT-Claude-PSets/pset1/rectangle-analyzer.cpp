@@ -14,9 +14,9 @@ int main() {
     std::cout << "Invalid Dimensions";
     return 1;
   }
-  std::cout << "Area: " << FIXED_FLOAT(width * length) << std::endl;
-  std::cout << "Perimeter: " << FIXED_FLOAT(2 * width + 2 * length) << std::endl;
-  std::cout << "Diagonal: " << FIXED_FLOAT(sqrt(width * width + length * length)) << std::endl;
-  std::cout << "Aspect Ration: " << FIXED_FLOAT(length / width) << " : 1" << std::endl;
+  std::cout << "Area: " << FIXED_FLOAT(width * length) << '\n';
+  std::cout << "Perimeter: " << FIXED_FLOAT(2 * width + 2 * length) << '\n';
+  std::cout << "Diagonal: " << FIXED_FLOAT(sqrt(width * width + length * length)) << '\n';
+  std::cout << "Aspect Ration: " << FIXED_FLOAT(length / width) << " : 1" << '\n';
   return 0;
 }

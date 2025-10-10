@@ -16,6 +16,6 @@ int main () {
   }
   tax = income * (taxPercent / 100);
   netIncome = income - tax;
-  std::cout << "Tax: " << tax << std::endl;
-  std::cout << "Net Income: " << netIncome << std::endl;
+  std::cout << "Tax: " << tax << '\n';
+  std::cout << "Net Income: " << netIncome << '\n';
 }

@@ -28,9 +28,9 @@ int main() {
     sum += elem;
     array[i] = elem;
   }
-  std::cout << "Min: " << min << ", Max: " << max << ", Range: " << max - min << std::endl;
-  std::cout << "Average: " << (double) sum / (double) arrayLength << std::endl;
-  std::cout << "Even: " << evens << ", Odds: " << odds << std::endl;
-  std::cout << "Sum: " << sum << std::endl;
+  std::cout << "Min: " << min << ", Max: " << max << ", Range: " << max - min << '\n';
+  std::cout << "Average: " << (double) sum / (double) arrayLength << '\n';
+  std::cout << "Even: " << evens << ", Odds: " << odds << '\n';
+  std::cout << "Sum: " << sum << '\n';
   return 0;
 }

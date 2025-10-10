@@ -3,14 +3,14 @@
 #include <iomanip>
 
 #define FIXED_FLOAT(x) std::fixed <<std::setprecision(2)<<(x)
-#define DASHED_LINE std::cout << "---------------------------------------------"<<std::endl
-#define PRINT_ITEM(name, qty, price, total) std::cout << name <<"\t\t" << qty << '\t' << FIXED_FLOAT(price) << '\t' << FIXED_FLOAT(total) <<std::endl
+#define DASHED_LINE std::cout << "---------------------------------------------"<<'\n'
+#define PRINT_ITEM(name, qty, price, total) std::cout << name <<"\t\t" << qty << '\t' << FIXED_FLOAT(price) << '\t' << FIXED_FLOAT(total) <<'\n'
 
 int main() {
   
   const double DISCOUNT = 0.05;
   const double TAX = 0.15;
-  std::cout << "Usage: ItemName quantity unit_price" <<std::endl;
+  std::cout << "Usage: ItemName quantity unit_price" <<'\n';
   std::string item1, item2, item3;
   int q1, q2, q3;
   double price1, price2, price3;
@@ -40,9 +40,9 @@ int main() {
   PRINT_ITEM(item2, q2, price2, total2);
   PRINT_ITEM(item3, q3, price3, total3);
   DASHED_LINE;
-  std::cout << "Subtotal: " << FIXED_FLOAT(subtotal) << std::endl;
-  std::cout << "Discount: " << FIXED_FLOAT(discount) << std::endl;
-  std::cout << "TAX     : " << FIXED_FLOAT(tax) << std::endl;
-  std::cout << "TOTAL   : " << FIXED_FLOAT(grandTotal) << std::endl;
+  std::cout << "Subtotal: " << FIXED_FLOAT(subtotal) << '\n';
+  std::cout << "Discount: " << FIXED_FLOAT(discount) << '\n';
+  std::cout << "TAX     : " << FIXED_FLOAT(tax) << '\n';
+  std::cout << "TOTAL   : " << FIXED_FLOAT(grandTotal) << '\n';
   return 0;
 }

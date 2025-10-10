@@ -25,8 +25,8 @@ int main () {
     grade = 'F';
     status = "Failed";
   }
-  std::cout << "Average: " << average << std::endl;
-  std::cout << "Grade: " << grade << std::endl;
-  std::cout << "Status: " << status << std::endl;
+  std::cout << "Average: " << average << '\n';
+  std::cout << "Grade: " << grade << '\n';
+  std::cout << "Status: " << status << '\n';
   return 1;
 }

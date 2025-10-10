@@ -16,9 +16,9 @@ int main() {
   }
   for (int i = min; i <= max; i ++) {
     temp = number * i;
-    std::cout << number << " x " << i << " = " << temp << std::endl;
+    std::cout << number << " x " << i << " = " << temp << '\n';
     total += temp;
   }
-  std::cout << "Sum of Products: " << total << std::endl;
+  std::cout << "Sum of Products: " << total << '\n';
   return 0;
 }

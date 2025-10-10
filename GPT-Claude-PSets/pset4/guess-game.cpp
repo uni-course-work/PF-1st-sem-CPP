@@ -20,6 +20,6 @@ int main() {
     }
     tries ++;
   } while (numberByUser != randomNumber);
-  std::cout << "You got this in " << tries << " tries. It was indeed: " << randomNumber<< std::endl;
+  std::cout << "You got this in " << tries << " tries. It was indeed: " << randomNumber<< '\n';
   return 0;
 }

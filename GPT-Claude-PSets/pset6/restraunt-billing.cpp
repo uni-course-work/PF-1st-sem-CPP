@@ -8,10 +8,10 @@ int main() {
   int pizzaPrice = 800;
   int friesPrice = 200;
   do {
-    std::cout << "1. Burger - " << burgerPrice << std::endl;
-    std::cout << "2. Pizza - " << pizzaPrice << std::endl;
-    std::cout << "3. Fries - " << friesPrice << std::endl;
-    std::cout << "4. Exit" << std::endl;
+    std::cout << "1. Burger - " << burgerPrice << '\n';
+    std::cout << "2. Pizza - " << pizzaPrice << '\n';
+    std::cout << "3. Fries - " << friesPrice << '\n';
+    std::cout << "4. Exit" << '\n';
     std::cout << "Select Item (1-4): ";
     std::cin >> option;
     if (option != 4) {
@@ -39,14 +39,14 @@ int main() {
       exit = true;
       break;
     default:
-      std::cout << "Unkown Option" << std::endl;
+      std::cout << "Unkown Option" << '\n';
       break;
     }
-    std::cout << "Subtotal: " << subtotal << std::endl;
+    std::cout << "Subtotal: " << subtotal << '\n';
   } while (exit == false);
   int newTotal = total + total * tax;
-  std::cout << "Total: " << total << std::endl;
-  std::cout << "Tax: " << total * tax << std::endl;
-  std::cout << "Net Total: " << newTotal << std::endl;
+  std::cout << "Total: " << total << '\n';
+  std::cout << "Tax: " << total * tax << '\n';
+  std::cout << "Net Total: " << newTotal << '\n';
   return 0;
 }

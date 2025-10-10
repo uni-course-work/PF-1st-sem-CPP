@@ -24,9 +24,9 @@ int main() {
       aboveAvg ++;
     }
   }
-  std::cout << "Average: " << average << std::endl;
-  std::cout << "Highest: " << high << ", Lowest: " << low << std::endl;
-  std::cout << "Failing: " << fail << std::endl;
-  std::cout << "Above Average: " << aboveAvg << " (50%)" << std::endl;
+  std::cout << "Average: " << average << '\n';
+  std::cout << "Highest: " << high << ", Lowest: " << low << '\n';
+  std::cout << "Failing: " << fail << '\n';
+  std::cout << "Above Average: " << aboveAvg << " (50%)" << '\n';
   return 0;
 }

@@ -12,15 +12,15 @@ int main() {
     for (int j = 1; j <= i; j++){
       std::cout << "* ";
     }
-    std::cout<<std::endl;
+    std::cout<<'\n';
   }
-  std::cout << "------------------" << std::endl;
+  std::cout << "------------------" << '\n';
   // Inverted Right Angle Triangle
   for (int i = 0; i <= N; i++){
     for (int j = N - i; j > 0; j -- ) {
       std::cout << "* ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
   // Pyramid
 
@@ -33,6 +33,6 @@ int main() {
     for (int k = 0; k < i; k++){
       std::cout << "* ";
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
 }

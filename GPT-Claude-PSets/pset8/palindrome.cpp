@@ -22,5 +22,5 @@ int main() {
     }
   }
 
-  std::cout << "Palindrome: " << (status ? "Yes" : "No") << std::endl;
+  std::cout << "Palindrome: " << (status ? "Yes" : "No") << '\n';
 }

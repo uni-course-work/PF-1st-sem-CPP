@@ -23,10 +23,10 @@ int main() {
   for (size_t i = 0; i < sizeOfArray; i++) {
     std::cout << array[i] << ' ';
   }
-  std::cout << std::endl;
+  std::cout << '\n';
   std::cout << "Desending: ";
   for (size_t i = sizeOfArray; i > 0; i --) {
     std::cout << array[i - 1] << ' ';
   }
-  std::cout << std::endl;
+  std::cout << '\n';
 }

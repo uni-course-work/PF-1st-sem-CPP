@@ -25,9 +25,9 @@ int main() {
       consonants ++;
     }
   }
-  std::cout << "Words: " << words << std::endl;
-  std::cout << "Characters: " << characters << std::endl;
-  std::cout << "Vowels: " << vowels << std::endl;
-  std::cout << "Consonants: " << consonants << std::endl;
+  std::cout << "Words: " << words << '\n';
+  std::cout << "Characters: " << characters << '\n';
+  std::cout << "Vowels: " << vowels << '\n';
+  std::cout << "Consonants: " << consonants << '\n';
   
 }

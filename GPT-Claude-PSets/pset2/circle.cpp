@@ -11,8 +11,8 @@ int main() {
   area = M_PI * pow(radius, 2);
   sphereVolume = (4.0 / 3.0) * M_PI * pow(radius, 3);
   cylinderVolume = M_PI * pow(radius, 2) * (2 * radius);
-  std::cout << "Circle Area    : " << FIXED_FLOAT(area) << std::endl;
-  std::cout << "Sphere Volume  : " << FIXED_FLOAT(sphereVolume) << std::endl;
-  std::cout << "Cylinder Volume: " << FIXED_FLOAT(cylinderVolume) << std::endl;
+  std::cout << "Circle Area    : " << FIXED_FLOAT(area) << '\n';
+  std::cout << "Sphere Volume  : " << FIXED_FLOAT(sphereVolume) << '\n';
+  std::cout << "Cylinder Volume: " << FIXED_FLOAT(cylinderVolume) << '\n';
   return 0;
 }

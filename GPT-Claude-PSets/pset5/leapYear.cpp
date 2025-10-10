@@ -20,6 +20,6 @@ int main () {
     leapYear = "No";
     days = 365;
   }
-  std::cout << "Leap Year: " << leapYear << std::endl;
-  std::cout << "Days: " << days << std::endl;
+  std::cout << "Leap Year: " << leapYear << '\n';
+  std::cout << "Days: " << days << '\n';
 }

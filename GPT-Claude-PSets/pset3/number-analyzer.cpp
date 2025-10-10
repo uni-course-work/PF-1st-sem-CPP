@@ -51,13 +51,13 @@ int main() {
       }
       std::cout << '\t';
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
-  std::cout << std::endl;
+  std::cout << '\n';
   for (int i = 0; i <N; i++){
     std::cout << numbers[i] << '\t';
   }
-  std::cout << std::endl;
+  std::cout << '\n';
   for (int i = 0; i >=min; i --){
     for (int j = 0; j < N; j++){
       int temp = numbers[j];
@@ -68,16 +68,16 @@ int main() {
       }
       std::cout << '\t';
     }
-    std::cout << std::endl;
+    std::cout << '\n';
   }
   // Print Results
   average = (double)sum / N;
-  std::cout << "Sum       \t: " << sum << std::endl;
-  std::cout << "Average   \t: " << std::fixed << std::setprecision(2) << average << std::endl;
-  std::cout << "Min       \t: " << min << std::endl;
-  std::cout << "Max       \t: " << max << std::endl;
-  std::cout << "Positives \t: " << positiveCount << std::endl;
-  std::cout << "Negatives \t: " << negativeCount << std::endl;
-  std::cout << "Zeros     \t: " << zerosCount << std::endl;
+  std::cout << "Sum       \t: " << sum << '\n';
+  std::cout << "Average   \t: " << std::fixed << std::setprecision(2) << average << '\n';
+  std::cout << "Min       \t: " << min << '\n';
+  std::cout << "Max       \t: " << max << '\n';
+  std::cout << "Positives \t: " << positiveCount << '\n';
+  std::cout << "Negatives \t: " << negativeCount << '\n';
+  std::cout << "Zeros     \t: " << zerosCount << '\n';
   return 0;
 }
