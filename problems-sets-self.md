@@ -1762,8 +1762,390 @@ At the end of your project:
 * What would you refactor if you had another week?
 
 ---
+  📅 **[2025-10-11 | 6:12 PM]**
+
+Perfect, Amor. That’s the mindset of a **true builder**, not just a coder.
+You’ve nailed the foundations — now it’s time to **build depth and mastery** through *higher-order C++ problem sets* that bridge the gap between "fundamentals" and "real engineering logic."
+
+You want *quality*, not filler — problems that **hurt a little**, but **teach a lot.**
+Got it. So here’s the next stage:
 
 ---
+
+# ⚙️ **Advanced C++ Problem Set Series — Part 6: “The Craftsman Level”**
+
+> **Theme:** From programmer → software craftsman
+> **Focus:** Logic design, abstraction, modularity, OOP transition
+> **Goal:** Each PSET should *stretch your brain* but not *snap your patience*.
+
+---
+
+## 🧠 **PSET 15 — Functional Abstraction & Modular Logic**
+
+### 🎯 Objectives
+
+* Build complex programs by composing multiple functions.
+* Handle modular decomposition and layered problem-solving.
+* Practice thinking in *systems*, not snippets.
+
+### 🧩 **Problem 1 — Gradebook Analyzer 2.0**
+
+You’re given multiple classes, each with multiple students.
+Compute class-wise averages, top students, and an overall report.
+
+**Features:**
+
+* Input `n` classes, each with `m` students (name, marks of 3 subjects).
+* Use functions for:
+
+  * input,
+  * average calculation,
+  * topper detection,
+  * summary display.
+* Output class topper and overall topper.
+
+**Concepts Reinforced:** Nested function calls, struct arrays, aggregation logic.
+
+---
+
+### 🧩 **Problem 2 — Expense Tracker 2.0**
+
+Build an expense manager that:
+
+* Records daily expenses in categories (`Food`, `Transport`, `Bills`, etc.)
+* Uses separate functions for adding, displaying, filtering, and calculating totals.
+* Computes:
+
+  * Total spend,
+  * Category-wise percentage,
+  * Daily average.
+
+**Optional Twist:** Save & load data from file (review of PSET 13).
+
+---
+
+### ⚡ **Challenge Extension**
+
+Add a **monthly summary function** that reads all daily records and prints which category consumed most spending.
+
+---
+
+### 💭 Reflection Prompt
+
+How does dividing your code into small, reusable functions improve readability?
+Where does modularization *hurt* (e.g., too many small functions)?
+
+---
+
+---
+
+## 🧩 **PSET 16 — Object-Oriented Awakening: Encapsulation & Design**
+
+### 🎯 Objectives
+
+* Understand **classes and objects** in real-world modeling.
+* Use constructors, getters/setters, and method logic.
+* Grasp **encapsulation** and **data integrity**.
+
+---
+
+### 🧩 **Problem 1 — Bank Account Class**
+
+Design a `BankAccount` class with:
+
+* Private attributes: `accountNo`, `name`, `balance`
+* Public methods: `deposit()`, `withdraw()`, `display()`
+* Constructor for initialization, validation for negative deposits.
+
+**Example Output:**
+
+```
+Account created: ZephyrAmmor (ID: 1001)
+Deposit: 5000
+Withdraw: 1200
+Balance: 3800
+```
+
+**Concept Reinforced:** Encapsulation, class design, member functions.
+
+---
+
+### 🧩 **Problem 2 — Inventory Management System**
+
+Create an `Item` class:
+
+* Attributes: `id`, `name`, `price`, `quantity`
+* Methods: `addStock()`, `sellItem()`, `display()`
+* Create an array/vector of items and operate on them.
+
+**Concept Reinforced:** Class-object manipulation, encapsulated state.
+
+---
+
+### ⚡ **Challenge Extension**
+
+Add a static counter to track how many items exist in the system at any time.
+
+---
+
+### 💭 Reflection Prompt
+
+Why does OOP make data management safer and more scalable?
+What design trade-offs come with encapsulation?
+
+---
+
+---
+
+## 🧩 **PSET 17 — OOP Level 2: Inheritance & Polymorphism**
+
+### 🎯 Objectives
+
+* Understand how inheritance avoids redundancy.
+* Learn virtual functions and method overriding.
+* Build layered systems.
+
+---
+
+### 🧩 **Problem 1 — Shape Hierarchy**
+
+Create a base class `Shape` and derived classes `Circle`, `Rectangle`, and `Triangle`.
+
+**Requirements:**
+
+* Virtual function `area()`
+* Input radius, base/height, etc. as per type.
+* Display area using base pointer array to demonstrate polymorphism.
+
+**Example Output:**
+
+```
+Circle Area: 78.5
+Rectangle Area: 45.0
+Triangle Area: 24.0
+```
+
+**Concept Reinforced:** Inheritance, polymorphism, abstraction.
+
+---
+
+### 🧩 **Problem 2 — Employee Management System**
+
+* Base class: `Employee` → name, ID, salary
+* Derived classes:
+
+  * `Manager` → bonus
+  * `Engineer` → overtime pay
+  * `Intern` → stipend
+* Use virtual function `calculatePay()` and store all employees in an array of pointers.
+
+**Concept Reinforced:** Dynamic binding, clean OOP hierarchy.
+
+---
+
+### ⚡ **Challenge Extension**
+
+Add a file-saving function to store all employee details and reload them.
+
+---
+
+### 💭 Reflection Prompt
+
+When should you use inheritance vs. composition?
+Why can virtual functions make code slower but more flexible?
+
+---
+
+---
+
+## 🧩 **PSET 18 — Data Structures and STL Foundation**
+
+### 🎯 Objectives
+
+* Introduce STL (Standard Template Library).
+* Learn to use `vector`, `map`, `set`, and algorithms.
+* Practice abstract thinking in data management.
+
+---
+
+### 🧩 **Problem 1 — Student Ranking System**
+
+* Use a `vector<pair<string, double>>` to store student names and GPAs.
+* Sort them in descending order.
+* Display top 3 performers and class average.
+
+**Concept Reinforced:** Vectors, sorting algorithms, pair usage.
+
+---
+
+### 🧩 **Problem 2 — Word Frequency Counter**
+
+Read text from file and count the frequency of each word using `map<string, int>`.
+
+**Example:**
+
+```
+Input: "I will master C++ and I will build great AI"
+Output:
+I → 2
+will → 2
+master → 1
+C++ → 1
+build → 1
+great → 1
+AI → 1
+```
+
+**Concept Reinforced:** Maps, iterators, algorithmic counting.
+
+---
+
+### ⚡ **Challenge Extension**
+
+Sort the map by frequency (convert to vector and sort).
+
+---
+
+### 💭 Reflection Prompt
+
+Why do STL containers make development faster and safer?
+How can STL be abused (e.g., black-box reliance without understanding logic)?
+
+---
+
+---
+
+## 🧩 **PSET 19 — Mini-Systems Engineering**
+
+### 🎯 Objectives
+
+* Combine OOP + STL + file handling.
+* Design modular, scalable software logic.
+
+---
+
+### 🧩 **Problem — Library Management System (Rebuild)**
+
+Recreate your earlier library system, but now:
+
+* Use **OOP + STL containers**
+* Each book has: title, author, price, availability
+* Features:
+
+  1. Add/Delete/Update books
+  2. Search by title or author
+  3. Save/Load from file
+* Use `vector<Book>` and file serialization.
+
+**Bonus:** Add a menu-driven interface with data persistence.
+
+**Concept Reinforced:** Real system design, data modeling, OOP integration.
+
+---
+
+### 💭 Reflection Prompt
+
+What architectural decisions did you make and why?
+Where could you abstract further if this system grew tenfold?
+
+---
+
+---
+
+## 💥 **PSET 20 — The Final Boss: Real-World Software Challenge**
+
+### 🎯 Title: **TaskHub — A CLI Task Manager**
+
+> Think Trello + Notion, but console-based.
+> This is where you test *everything* you’ve learned.
+
+---
+
+### 🔧 **Specifications**
+
+You will design a *command-line productivity manager* with these features:
+
+1. **User Management**
+
+   * Register/Login users (saved to file)
+   * Password authentication
+
+2. **Task Management**
+
+   * Add, edit, delete tasks
+   * Each task: `title`, `description`, `priority`, `status`, `deadline`
+   * Organize tasks by priority or date (use `vector` + `sort`)
+
+3. **Persistence**
+
+   * Save tasks per user to file on exit, reload on login
+
+4. **Search & Filter**
+
+   * Search by keyword
+   * Filter by priority or status
+
+5. **Reports**
+
+   * Summary: total tasks, completed %, overdue count
+
+6. **OOP Architecture**
+
+   * Classes: `User`, `Task`, `TaskManager`, `FileHandler`
+   * Use inheritance or composition meaningfully
+   * STL for storage, file I/O for persistence
+
+---
+
+### 💡 **Concepts Reinforced**
+
+* Modular architecture
+* OOP hierarchy
+* STL algorithms
+* Data persistence
+* Command-line UI design
+* Error handling & edge-case robustness
+
+---
+
+### ✅ **Completion Checklist**
+
+* [ ] Modular class-based design
+* [ ] Separation of logic layers
+* [ ] Persistent file I/O
+* [ ] CLI UX polish (menus, prompts, colors optional)
+* [ ] Reflection notes (what you learned & what broke your brain)
+
+---
+
+### 💭 **Reflection Prompt**
+
+Which part of this system challenged your architecture thinking the most?
+How would you scale this to a desktop GUI or web backend?
+
+---
+
+---
+
+## 🧩 **Series Summary**
+
+| Stage   | Focus            | Type                      | Skill Depth         |
+| ------- | ---------------- | ------------------------- | ------------------- |
+| PSET 15 | Modular thinking | Functions, structs        | 💡 Analytical       |
+| PSET 16 | Encapsulation    | Classes, objects          | ⚙️ Foundational OOP |
+| PSET 17 | Hierarchies      | Inheritance, polymorphism | 🧱 Structural       |
+| PSET 18 | Data management  | STL, maps, vectors        | 🔍 Algorithmic      |
+| PSET 19 | System design    | OOP + STL + File          | 🧩 Integrated       |
+| PSET 20 | Capstone         | Full-scale project        | 🚀 Engineering      |
+
+---
+
+🔥 **After completing PSET 20**, you’ll officially be ready to:
+
+* Start **C++ OOP deep-dive** (classes, templates, exception handling)
+* Enter **Data Structures & Algorithms**
+* Move into **Python or JavaScript backend** confidently
+* or even build your **first real AI-ready system**
 
 ## 🧾 Epilogue — Path Forward After This Series
 
