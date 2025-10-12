@@ -1,11 +1,23 @@
 #include <iostream>
 
+struct Weather {
+  std::string dayName;
+  float temp;
+};
+
+void sortByTemp(Weather data[], int n){
+  for (size_t i = 0; i < n; i++) {
+    for (size_t j = i; j < n; j++){
+      if (data[j].temp < data[i].temp){
+        int tmp = data[i].temp;
+        data[i].temp = data[j].temp;
+        data[j].temp = tmp;
+      }
+    }
+  }
+}
 int main() {
   float avg, sum = 0, min = 10000, max = -273.15;
-  struct Weather {
-    std::string dayName;
-    float temp;
-  };
 
   Weather week [7];
 
@@ -42,5 +54,10 @@ int main() {
       std::cout << day.dayName << " : " << day.temp << '\t';
     }
   }
+  std::cout << "\nSorted Data\n";
+  for (size_t i = 0; i < 7; i++){
+    std::cout << week[i].dayName << ' ' <<week[i].temp << ' ';
+  }
   std::cout << '\n';
+  return 0;
 }
