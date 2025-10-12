@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <limits>
 
 int main() {
   int numberOfStudents, numberOfSubjects;
@@ -28,11 +30,12 @@ int main() {
   for (size_t i = 0; i < numberOfStudents; i++) {
     Student student;
     double sum = 0;
-    std::cout << "Enter Student #" << i + 1 << '\n';
+    std::cout << "Enter Student #" << i + 1 << std::endl;
     std::cout << "Enter Name: ";
-    std::cin >> student.name;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::getline(std::cin, student.name);
     std::cout << "Enter Father Name: ";
-    std::cin >> student.fatherName;
+    std::getline(std::cin, student.fatherName);
     std::cout << "Enter Roll Number: ";
     std::cin >> student.rollNumber;
     std::cout << "Enter Student's "<< numberOfSubjects << " subjects marks: ";
