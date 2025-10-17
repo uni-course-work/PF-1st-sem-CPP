@@ -10,7 +10,7 @@ int main() {
   // Right Angle Triangle
   for (int i = 1; i <= N; i ++) {
     for (int j = 1; j <= i; j++){
-      std::cout << "* ";
+      std::cout << "*";
     }
     std::cout<<'\n';
   }
@@ -18,7 +18,7 @@ int main() {
   // Inverted Right Angle Triangle
   for (int i = 0; i <= N; i++){
     for (int j = N - i; j > 0; j -- ) {
-      std::cout << "* ";
+      std::cout << "*";
     }
     std::cout << '\n';
   }
@@ -31,7 +31,7 @@ int main() {
     }
     spaces--;
     for (int k = 0; k < i; k++){
-      std::cout << "* ";
+      std::cout << "*";
     }
     std::cout << '\n';
   }
