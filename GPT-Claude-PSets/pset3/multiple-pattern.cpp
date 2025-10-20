@@ -24,14 +24,14 @@ int main() {
   }
   // Pyramid
 
-  int spaces = N -1;
+  int spaces = N;
   for (int i = 1; i <= N; i ++) {
     for (int j = 1; j <= spaces; j++){
       std::cout << " ";
     }
     spaces--;
     for (int k = 0; k < i; k++){
-      std::cout << "*";
+      std::cout << "* ";
     }
     std::cout << '\n';
   }
