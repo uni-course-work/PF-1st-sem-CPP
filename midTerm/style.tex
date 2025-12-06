@@ -1,0 +1,40 @@
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setmonofont{IBM Plex Mono}[Scale=0.9, Ligatures=NoCommon]
+
+\usepackage{xcolor}
+\usepackage{fvextra}
+\usepackage{framed}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\setstretch{1.15}
+
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+  commandchars=\\\{\},
+  breaklines=true,
+  breakanywhere=true,
+  breaksymbolleft={\tiny\ensuremath{\hookrightarrow}},
+  fontsize=\small,
+  xleftmargin=0.5em,
+  xrightmargin=0.5em
+}
+
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{C++ Mid Guide}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\emergencystretch=3em
+\tolerance=1000
+\sloppy

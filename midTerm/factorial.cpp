@@ -10,7 +10,7 @@ int main() {
 
   while (number > 65 || number < 0) {
     std::cout << "Opps!🙊\n";
-    std::cout << "Factorials of negatives is not appreciated!😤\n";
+    std::cout << "Factorial of negatives is not appreciated!😤\n";
     std::cout << "🧐 We can't handle factorials of numbers greater than 65\n";
     std::cout << "Re Enter a positve integer smaller than 66 👁️: ";
     std::cin >> number;
