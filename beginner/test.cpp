@@ -1,12 +1,19 @@
 #include <iostream>
 
-int main() {
-  double a = 0.000000044;
-  double b = 0.000000055;
-  double c = 0.000000099;
-  if(c == a + b){
-    std::cout << "C = " << c << '\n';
-  } else {
-    std::cout << "hmm C = " << c << '\n';
+char difference = 'a' - 'A';
+char tolower(char c) {
+  if(c >= 'A' && c <= 'Z') {
+    return c + difference;
   }
+  return c;
+}
+char toupper(char c) {
+  if (c >= 'a' && c <='z') {
+    return c - difference;
+  }
+  return c;
+}
+int main() {
+std::cout << tolower('A') << " " << tolower('b') << std::endl;
+std::cout << toupper('Z') << " " << toupper('c') << std::endl;
 }
