@@ -1,19 +1,35 @@
 #include <iostream>
+#include <fstream>
 
-char difference = 'a' - 'A';
-char tolower(char c) {
-  if(c >= 'A' && c <= 'Z') {
-    return c + difference;
+using namespace std;
+
+int main () {
+  std::ofstream ofile ("./hmmm.txt");
+
+  if(!ofile) {
+    cout << "Ops! We are unable to open hmmm.txt for writing\n";
+    return 0;
   }
-  return c;
-}
-char toupper(char c) {
-  if (c >= 'a' && c <='z') {
-    return c - difference;
+  std::cout << "Enter END at a new line to stop inserting text\n";
+  std::cout << "Enter Text\n";
+  
+  std::string line{};
+  while(line != "END") {
+    std::cout << "> ";
+    std::getline(std::cin, line);
+    if(line != "END") {
+      ofile << line << '\n';
+    }
   }
-  return c;
-}
-int main() {
-std::cout << tolower('A') << " " << tolower('b') << std::endl;
-std::cout << toupper('Z') << " " << toupper('c') << std::endl;
+  ofile.close();
+  std::ifstream ifile ("hmmm.txt");
+  if(!ifile) {
+    cout << "Oops! We are unable to open hmmm.txt for writing\n";
+    return 0;
+  }
+  string words;
+  while(getline(ifile, words)) {
+    std::cout << words << '\n';
+  }
+  return 0;
 }
